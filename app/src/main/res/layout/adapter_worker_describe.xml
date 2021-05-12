@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.example.listofspecialties.presentation.screeen.worker.viewmodel.WorkerViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        app:cardCornerRadius="@dimen/card_corner_radius_8"
+        app:cardElevation="@dimen/card_elevation_4"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{viewModel.worker.firstName}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{viewModel.worker.lastName}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{viewModel.worker.age}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

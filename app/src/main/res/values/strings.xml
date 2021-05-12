@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListOfSpecialties</string>
+    <string name="ERROR_MESSAGE">Произошла ошибка</string>
+</resources>

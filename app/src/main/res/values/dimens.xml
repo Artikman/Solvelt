@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="title">20sp</dimen>
+
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+
+    <dimen name="card_corner_radius_16">16dp</dimen>
+    <dimen name="card_corner_radius_8">8dp</dimen>
+
+    <dimen name="card_elevation_4">4dp</dimen>
+
+    <dimen name="elevation_2">2dp</dimen>
+
+    <dimen name="expanded_title_margin_end_64">64dp</dimen>
+
+    <dimen name="expanded_title_margin_start_48">48dp</dimen>
+
+    <dimen name="default_text_size">20sp</dimen>
+
+    <dimen name="detail_image_height_size">260dp</dimen>
+</resources>
